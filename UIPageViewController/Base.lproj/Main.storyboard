@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать! 🐼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4W-M4-mcE">
+                                <rect key="frame" x="55" y="434.5" width="304.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67969631877170622" green="1" blue="0.69933449860800168" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="I4W-M4-mcE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8YT-Fd-TR2"/>
+                            <constraint firstItem="I4W-M4-mcE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rXm-3q-ybf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Wka-KU-71E">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="6dw-u1-bGm" customClass="PageViewController" customModule="UIPageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcR-3d-Qrw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="140"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="Rly-3o-pcK">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="Lzy-o0-tjk" customClass="ContentViewController" customModule="UIPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ePU-vQ-pXc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здесь какой-то текст о приложении..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLZ-1F-OUf">
+                                <rect key="frame" x="14" y="245" width="386" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🧚🏻‍♀️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOO-LL-7h6">
+                                <rect key="frame" x="153" y="393.5" width="108" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="IUX-Zt-WfH">
+                                <rect key="frame" x="187.5" y="825" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.59323667629999999" green="0.854508716" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.18506881420718602" blue="0.25277310115092322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67969631880000003" green="1" blue="0.69933449859999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dLZ-1F-OUf" firstAttribute="leading" secondItem="QEr-mb-Jkf" secondAttribute="leading" constant="14" id="5lW-u1-zsh"/>
+                            <constraint firstItem="qOO-LL-7h6" firstAttribute="centerY" secondItem="QEr-mb-Jkf" secondAttribute="centerY" id="D5k-Yv-IO6"/>
+                            <constraint firstItem="QEr-mb-Jkf" firstAttribute="bottom" secondItem="IUX-Zt-WfH" secondAttribute="bottom" id="NhI-gJ-nMh"/>
+                            <constraint firstItem="IUX-Zt-WfH" firstAttribute="centerX" secondItem="QEr-mb-Jkf" secondAttribute="centerX" id="Z2I-O5-ZlM"/>
+                            <constraint firstItem="dLZ-1F-OUf" firstAttribute="top" secondItem="QEr-mb-Jkf" secondAttribute="top" constant="201" id="aTN-Ta-FEJ"/>
+                            <constraint firstItem="qOO-LL-7h6" firstAttribute="centerX" secondItem="QEr-mb-Jkf" secondAttribute="centerX" id="fQz-Vb-2WN"/>
+                            <constraint firstItem="QEr-mb-Jkf" firstAttribute="trailing" secondItem="dLZ-1F-OUf" secondAttribute="trailing" constant="14" id="s0p-8P-oH4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QEr-mb-Jkf"/>
+                    </view>
+                    <connections>
+                        <outlet property="emodjiLabel" destination="qOO-LL-7h6" id="QK4-93-aeh"/>
+                        <outlet property="pageControl" destination="IUX-Zt-WfH" id="WiH-ix-yFb"/>
+                        <outlet property="presentTextLabel" destination="dLZ-1F-OUf" id="32e-qi-gJh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klm-sb-9AM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1666" y="143"/>
+        </scene>
+    </scenes>
+</document>
